@@ -1,0 +1,505 @@
+ body {
+   background-color: #000;
+   color: #333;
+ }
+ /* Month and Year */
+ 
+ #year {
+   font-size: 35px;
+   margin-top: 180px;
+   margin-left: 20px;
+   /*color: #333; */
+   color: #858585;
+   opacity: 0.9;
+   position: absolute;
+ }
+
+ /* Smaller Phone */
+ @media (min-width: 320px) {
+   #year {
+     font-size: 25px;
+     margin-top: 120px;
+     margin-left: -3px;
+   }
+ }
+
+ /* Smart Phone */
+ @media (min-width: 767px) {
+   #year {
+     font-size: 25px;
+     margin-top: 120px;
+     margin-left: -3px;
+   }
+ }
+
+ /* Laptop */
+ @media (min-width: 992px) {
+   #year {
+     font-size: 35px;
+   }
+ }
+ 
+ #monthNum {
+   font-size: 400px;
+   /* opacity: 0.5; */
+   opacity: 1.5;
+   position: absolute;
+   top: -75px;
+   margin-left: 15px;
+ }
+
+ /* Small Phone */
+ @media (min-width: 320px) {
+   #monthNum {
+     font-size: 260px;
+   }
+ }
+
+ /* Smart Phone */ 
+ @media (min-width: 767px) {
+   #monthNum {
+     font-size: 320px;
+   }
+ }
+ 
+/* Laptop */
+ @media (min-width: 992px) {
+   #monthNum {
+     font-size: 320px;
+   }
+ }
+ /* END Month and Year */
+ /* ===================== */
+ /* Weather Forecast */
+ 
+ .currentDate {
+   padding-top: 125px;
+ }
+
+/* Small Phone */
+ @media (min-width: 320px) {
+   .currentDate {
+   padding-top: 0px;
+   }
+ }
+
+ /* Smart Phone */ 
+ @media (min-width: 767px) {
+  .currentDate {
+   padding-top: 0px;
+   }
+ }
+
+
+/* Laptop */
+ @media (min-width: 992px) {
+   .currentDate {
+   padding-top: 185px;
+   }
+ }
+
+/* Bigger Laptops */
+ @media (min-width: 1024px) {
+   .currentDate {
+   padding-top: 155px;
+   }
+ }
+
+ @media (min-width: 1199px) {
+   .currentDate {
+   padding-top: 95px;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .currentDate {
+   padding-top: 127px;
+   }
+ }
+
+/* Desktop */
+ @media (min-width: 1440px) {
+   .currentDate {
+   padding-top: 125px;
+   }
+ }
+ 
+ .day0 {
+   font-size: 22px;
+   color: #000;
+ }
+ 
+ .day1,
+ .day2,
+ .day3,
+ .day4,
+ .day5 {
+   font-size: 22px;
+   color: #828282;
+ }
+ 
+ .date0 {
+   font-size: 62px;
+   line-height: 55px;
+   color: #000;
+ }
+ /* Smart Phone */
+ 
+ @media(min-width: 767px) {
+   .date0 {
+     font-size: 40px;
+   }
+ }
+ 
+ .date1,
+ .date2,
+ .date3,
+ .date4,
+ .date5 {
+   font-size: 62px;
+   line-height: 55px;
+   color: #828282;
+ }
+
+ /* Smart Phone */
+ @media(min-width: 767px) {
+   .date1,
+   .date2,
+   .date3,
+   .date4,
+   .date5 {
+     font-size: 40px;
+   }
+ }
+
+.temp1, .temp2, .temp3, .temp4, .temp5 {
+    color: #828282;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.desc1, .desc2, .desc3, .desc4, .desc5 {
+  color: #828282;
+  font-weight: 600;
+}
+ 
+ #convertTemp {
+   border: #000 solid 2px;
+   background-color: transparent;
+   color: #000;
+   margin: 10px 0;
+   font-weight: 600;
+ }
+ 
+ #convertTemp:hover {
+   border: #000 solid 2px;
+   background-color: #000;
+   color: #FFF549;
+   margin: 10px 0;
+   font-weight: 600;
+ }
+ 
+ .thumbnail.current-thumbnail {
+   background-color: transparent;
+   border: none;
+   color: #C8C8C8;
+   padding-top: 278px;
+   height: 100vh;
+ }
+ /* Smaller Phone */
+ 
+ @media (min-width: 320px) {
+   .thumbnail.current-thumbnail {
+     padding-top: 20px;
+     margin-top: 250px;
+     height: 100vh;
+   }
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .thumbnail.current-thumbnail {
+     padding-top: 5px;
+     margin-top: 315px;
+     height: 100vh;
+   }
+   p {
+     margin: 0;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .thumbnail.current-thumbnail {
+     margin-top: -15px;
+     height: 100vh;
+   }
+ }
+ /* Desktop */
+ 
+ @media (min-width: 1199px) {
+   .thumbnail.current-thumbnail {
+     margin-top: 45px;
+     height: 100vh;
+   }
+ }
+ 
+ .thumbnail {
+   background-color: transparent;
+   border: none;
+   color: #C8C8C8;
+   padding-top: 375px;
+ }
+ /* Smaller Phone */
+ 
+ @media (min-width: 320px) {
+   .thumbnail {
+     padding-top: 20px;
+   }
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .thumbnail {
+     padding-top: 30px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .thumbnail {
+     padding-top: 325px;
+   }
+ }
+ /* Add in media query for .thumbnail for the tablet and mobile views to remove padding-top:400px since it looks like shite. */
+ 
+ .forecastToday,
+ .forecastNumToday {
+   color: #000;
+ }
+ 
+ .forecastToday {
+   font-size: 22px;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .forecastToday {
+     font-size: 22px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .forecastToday {
+     font-size: 22px;
+   }
+ }
+ 
+ .forecastNumToday {
+   font-size: 62px;
+   line-height: 55px;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .forecastNumToday {
+     font-size: 40px;
+   }
+ }
+ /* END Weather Forecast */
+ /*--------------------------*/
+ /* Current Weather */
+ 
+ #currentDay {
+   background-color: #FFF549;
+   height: 100vh;
+ }
+ /* Smaller Phone */
+ 
+ @media (min-width: 320px) {
+   #currentDay {
+     height: 470px;
+   }
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   #currentDay {
+     background-color: #FFF549;
+     height: 370px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   #currentDay {
+     background-color: #FFF549;
+     height: 100vh;
+   }
+ }
+ 
+ .time {
+   color: #000;
+   font-size: 18px;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .time {
+     font-size: 24px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .time {
+     font-size: 22px;
+   }
+ }
+ 
+ .location {
+   color: #000;
+   font-size: 18px;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .location {
+     font-size: 20px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .location {
+     font-size: 22px;
+   }
+ }
+ 
+ .temp0 {
+   color: #000;
+   font-size: 30px;
+   font-weight: bold;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .temp0 {
+     font-size: 28px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .temp0 {
+     font-size: 35px;
+   }
+ }
+ 
+ .desc0 {
+   color: #000;
+   font-weight: 600;
+ }
+ 
+ .icon0 {
+   color: #0000FF;
+   font-size: 72px;
+   background-color: #000;
+   border-radius: 10px;
+   padding: 10px;
+ }
+ /* Smaller Phone */
+ 
+ @media (min-width: 320px) {
+   .icon0 {
+     color: #0000FF;
+     font-size: 60px;
+     background-color: #000;
+     border-radius: 10px;
+     padding: 10px;
+   }
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .icon0 {
+     color: #0000FF;
+     font-size: 55px;
+     background-color: #000;
+     border-radius: 10px;
+     padding: 10px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .icon0 {
+     color: #0000FF;
+     font-size: 72px;
+     background-color: #000;
+     border-radius: 10px;
+     padding: 10px;
+   }
+ }
+ 
+ .icon-upcoming {
+   color: #828282;
+   background-color: #383838;
+   font-size: 72px;
+   border-radius: 10px;
+   padding: 10px;
+ }
+ /* Smaller Phone */
+ 
+ @media (min-width: 320px) {
+   .icon-upcoming {
+     font-size: 60px;
+   }
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .icon-upcoming {
+     font-size: 55px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .icon-upcoming {
+     font-size: 72px;
+   }
+ }
+ 
+ .temp-upcoming {
+   color: #828282;
+   font-size: 30px;
+   font-weight: bold;
+ }
+ /* Smart Phone */
+ 
+ @media (min-width: 767px) {
+   .temp-upcoming {
+     font-size: 28px;
+   }
+ }
+ /* Laptop */
+ 
+ @media (min-width: 992px) {
+   .temp-upcoming {
+     font-size: 35px;
+   }
+ }
+ /* END Current Weather */
+ /* Media Queries */
+ /* Smart Phone */
+ /* @media (min-width: 768px) {
+  #tomorrow,
+  #thirdDay,
+  #fourthDay,
+  #fifthDay,
+  #sixthDay {
+    font-size: 40px;
+  }
+} */
