@@ -5,7 +5,7 @@ if (navigator.geolocation) {
 		var long = position.coords.longitude;
 
 		//Dark Sky API key (unfortunately can't hide the api key)
-		var apiKey = "82a8a7e5933363742600b2de987aece4";
+		var apiKey = "API_KEY";
 
 		//Dark Sky URL
 		var weatherURL = "https://api.darksky.net/forecast/";
@@ -96,7 +96,7 @@ if (navigator.geolocation) {
 		//Make sure to read Google Maps API Policies
 		//https://developers.google.com/maps/documentation/geocoding/policies
 		//Key
-		var otherAPIKey = "AIzaSyBb4Ihnyr3I4WNRsiGMEdZBU1oJSi75IJM";
+		var otherAPIKey = "API_KEY";
 		//console.log(otherAPIKey);
 
 		//Google Maps URL
